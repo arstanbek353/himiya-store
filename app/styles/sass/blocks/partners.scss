@@ -1,0 +1,43 @@
+.partners {
+  margin-bottom: 17rem;
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+  &__slide {
+    width: 40.4rem;
+    margin-right: 2.5rem;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    overflow: hidden;
+    @include img-contain;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 48em) {
+    margin-bottom: 10rem;
+    &__inner {
+      position: relative;
+      padding-bottom: 7rem;
+    }
+    &__head {
+      margin-bottom: 3rem;
+    }
+    &__subtitle {
+      font-size: 1.4rem;
+    }
+    &__nav {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &__slide {
+      width: 100%;
+      margin-right: 0;
+      border-radius: 2rem;
+    }
+  }
+}

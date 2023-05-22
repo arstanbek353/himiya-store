@@ -1,0 +1,28 @@
+.contact-form2 {
+  background-color: #fff;
+  &__title {
+    font-weight: 600;
+    font-size: 4.6rem;
+    color: #060606;
+    margin-bottom: 2.7rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 138.4%;
+    color: #12121A;
+    margin-bottom: 8rem;
+    a {
+      color: #E78512;
+    }
+  }
+  @media (max-width: 48em) {
+    &__title {
+      font-size: 3.2rem;
+      margin-bottom: 2rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
