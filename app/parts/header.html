@@ -11,12 +11,14 @@
   <link rel="icon" href="images/favicon.png">
   <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/app.min.css">
-  <!-- <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+  <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="js/map.js"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
@@ -34,21 +36,23 @@
                 <div class="nav__h-logo">
                   <img src="images/dist/logo-black.svg" alt="">
                 </div>
-                <button class="nav__close">
+                <button class="header__close nav__close">
                   <img src="images/dist/modal-close.svg" alt="">
                 </button>
               </div>
               <div class="nav__nav-title">Меню</div>
             </div>
             <div class="nav__nav-list">
-              <div class="nav__item">
+              <div class="nav__item nav__item--drop">
                 <div class="nav__title">
-                  <a href="/" class="nav__link">О компании</a>
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
                 </div>
                 <div class="nav__under">
                   <div class="nav__under-item">
                     <div class="nav__under-title">
                       <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
                     </div>
                     <div class="nav__under-list">
                       <a href="">Для посуды</a>
@@ -61,6 +65,7 @@
                   <div class="nav__under-item">
                     <div class="nav__under-title">
                       <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
                     </div>
                     <div class="nav__under-list">
                       <a href="">Для посуды</a>
@@ -71,6 +76,7 @@
                   <div class="nav__under-item">
                     <div class="nav__under-title">
                       <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
                     </div>
                     <div class="nav__under-list">
                       <a href="">Для посуды</a>
@@ -80,21 +86,69 @@
               </div>
               <div class="nav__item">
                 <div class="nav__title">
-                  <a href="/" class="nav__link">Каталоги</a>
+                  <a href="/" class="nav__link">Акции</a>
                 </div>
               </div>
               <div class="nav__item">
                 <div class="nav__title">
-                  <a href="/" class="nav__link">Новости</a>
+                  <a href="/" class="nav__link">О компании</a>
                 </div>
               </div>
               <div class="nav__item">
                 <div class="nav__title">
-                  <a href="/" class="nav__link">Контакты</a>
+                  <a href="/" class="nav__link">Блог</a>
                 </div>
               </div>
             </div>
-            <div class="header__contacts">
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
             </div>
           </nav>
           <button class="header__burger">

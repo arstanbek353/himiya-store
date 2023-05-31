@@ -1,0 +1,32 @@
+<div class="discount">
+  <div class="container">
+    <div class="discount__inner">
+      <div class="discount__left">
+        <div class="discount__title">Скидка 15%</div>
+        <div class="discount__text">для новых подписчиков!</div>
+      </div>
+      <div class="discount__right">
+        <div class="discount__form">
+          <form class="form" method="POST" action="/req.php">
+            <div class="form__inner">
+              <div class="form__item">
+                <input type="email" name="name" class="form__input" placeholder="Введите ваш Email" required>
+                <div class="only-pc"><button class="btn form__send">Отправить</button></div>
+              </div>
+            </div>
+            <div class="form__actions">
+              <div class="form__conf">
+                <label class="form__conf-label">
+                  <input type="checkbox" class="visually-hidden" required>
+                  <span></span>
+                </label>
+                <div class="form__conf-text">Я подтверждаю, что ознакомился с <a href="#">пользовательским соглашением</a></div>
+              </div>
+            </div>
+            <div class="only-sp"><button class="btn form__send">Отправить</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

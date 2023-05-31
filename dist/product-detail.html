@@ -11,50 +11,146 @@
   <link rel="icon" href="images/favicon.png">
   <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/app.min.css">
   <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="js/map.js"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
   <div class="root">
-    <header class="header light">
+    <header class="header dark">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img src="images/dist/logo.svg" class="light" alt="logo">
             <img src="images/dist/logo-black.svg" class="dark" alt="logo">
           </a>
-          <nav class="header__nav">
-            <div class="header__head">
-              <div class="header__header">
-                <div class="header__h-logo">
+          <nav class="nav header__nav">
+            <div class="nav__head">
+              <div class="nav__header">
+                <div class="nav__h-logo">
                   <img src="images/dist/logo-black.svg" alt="">
                 </div>
-                <button class="header__close">
+                <button class="header__close nav__close">
                   <img src="images/dist/modal-close.svg" alt="">
                 </button>
               </div>
-              <div class="header__nav-title">Меню</div>
+              <div class="nav__nav-title">Меню</div>
             </div>
-            <div class="header__nav-list">
-              <a href="/" class="header__links">О компании</a>
-              <a href="/" class="header__links">Каталоги</a>
-              <a href="/" class="header__links">Новости</a>
-              <a href="/" class="header__links">Контакты</a>
+            <div class="nav__nav-list">
+              <div class="nav__item nav__item--drop">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
+                </div>
+                <div class="nav__under">
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                      <a href="">Для кухни</a>
+                      <a href="">Прочее</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Акции</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">О компании</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Блог</a>
+                </div>
+              </div>
             </div>
-            <div class="header__contacts">
-              <a href="tomail:info@example.ru" class="header__contact">info@example.ru</a>
-              <a href="tel:+7 (495) 555 32 54" class="header__contact">+7 (495) 555 32 54</a>
-              <button class="btn header__req" data-class="contact">Оставить заявку</button>
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
             </div>
           </nav>
-          <button class="header__pen" data-class="contact">
-            <img src="images/dist/header-pen.svg" alt="">
-          </button>
           <button class="header__burger">
             <img src="images/dist/burger.svg" alt="">
           </button>
@@ -65,7 +161,7 @@
   <div class="container">
     <div class="brc">
       <a href="/" class="brc__link">Главная</a>
-      <a href="/" class="brc__link">Каталоги</a>
+      <a href="/" class="brc__link">Продукт</a>
     </div>
     <div class="product-detail__inner">
       <div class="product-detail__left">
@@ -86,6 +182,10 @@
             <div class="swiper-slide product-detail__top-slide">
               <img src="images/dist/item1.png" alt="">
             </div>
+          </div>
+          <div class="product-detail__nav">
+            <div class="slider-prev product-detail__prev"></div>
+            <div class="slider-next product-detail__next"></div>
           </div>
         </div>
         <div class="swiper-container product-detail__bot-slider">
@@ -109,24 +209,101 @@
         </div>
       </div>
       <div class="product-detail__right">
-        <div class="product-detail__brand">UNIREX</div>
-        <div class="product-detail__title">Концентрированный гель для стирки с кондиционером Роза сменный блок Attack New Beads 0,68кг</div>
-        <div class="product-detail__art">Артикул: 992887</div>
-        <div class="product-detail__text">
-          <h2>Описание</h2>
-          <p>Использовать средство можно для стирки как белого, так и цветного белья. Пятновыводитель подойдет как для изделий из хлопка и льна, так и для шелка, шерсти и синтетических тканей. В результате использования белые ткани излучают белизну, а цветным придается больше яркости. Пятновыводитель способен качественно очистить загрязнения и устранить микробы даже при использовании в холодной воде. Это позволяет экономить электроэнергию и носить любимые вещи с большим сроком службы. Средство качественно способно устранить даже въевшиеся пятна. Для стойких загрязнений рекомендуется использовать теплую воду, температура которой не превышает 60 градусов. Средство оказывает дезодорирующее и антибактериальное действие на отстирываемые вещи.
-            <br><br>
-            Пятновыводитель способен проникнуть вглубь волокон, устранив бактерии, которые зачастую являются возбудителями неприятных запахов на белье.
-            Использовать средство можно как для непосредственного нанесения на загрязненные участки, так и при стирке в стиральной машине.</p>
-          <br><br><br><br>
-          <h2>Состав</h2>
-          <ul>
-            <li>15-30% неионогенные ПАВ</li>
-            <li>5% кислородный отбеливатель,</li>
-            <li>катионные ПАВ</li>
-            <li>стабилизатор</li>
-            <li>отдушка</li>
-          </ul>
+        <div class="product-detail__arts">
+          <span>Артикул: 9611</span>
+          <span>Код: 34368</span>
+          <span>Штрихкод: 460298401126</span>
+        </div>
+        <div class="product-detail__title">Sanfor WC Gel средство для чистки и дезинфекции Super power 750мл</div>
+        <div class="product-detail__list">
+          <div class="product-detail__item">
+            <span>Бренд</span>
+            <span>Sorisso</span>
+          </div>
+          <div class="product-detail__item">
+            <span>Производитель</span>
+            <span>Ступинский Химический Завод</span>
+          </div>
+          <div class="product-detail__item">
+            <span>Объем</span>
+            <span>750 мл</span>
+          </div>
+          <div class="product-detail__item">
+            <span>Производитель</span>
+            <span>Ступинский Химический Завод</span>
+          </div>
+        </div>
+        <div class="product-detail__price">
+          4 175 ₽
+          <span>/  1 шт</span>
+        </div>
+        <div class="product-detail__footer">
+          <button class="btn">
+            <img src="images/dist/cartt.svg" alt="">
+            В корзину</button>
+          <div class="product-detail__counter">
+            <button class="m">
+              <img src="images/dist/minus.svg" alt="">
+            </button>
+            <input type="number" value="1">
+            <button class="p">
+              <img src="images/dist/plus.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-tab">
+      <div class="product-tab__inner">
+        <div class="product-tab__tabs">
+          <div class="product-tab__tabs-border">
+            <button class="product-tab__tab active">
+              О продукте
+            </button>
+            <button class="product-tab__tab">
+              Состав
+            </button>
+            <button class="product-tab__tab">
+              Отзывы
+            </button>
+            <button class="product-tab__tab">
+              Оплата и доставка
+            </button>
+          </div>
+        </div>
+        <div class="product-tab__blocks">
+          <div class="product-tab__block active">
+            <div class="product-tab__description">
+              <div class="product-tab__title">Описание</div>
+              <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p><br><br>
+              <p>Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p><br><br>
+              <p>Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.</p>
+            </div>
+          </div>
+          <div class="product-tab__block">
+            <div class="product-tab__description">
+              <div class="product-tab__title">Описание</div>
+              <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p><br><br>
+              <p>Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p><br><br>
+              <p>Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.</p>
+            </div>
+          </div>
+          <div class="product-tab__block">
+            <div class="product-tab__description">
+              <div class="product-tab__title">Описание</div>
+              <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p><br><br>
+              <p>Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p><br><br>
+              <p>Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.</p>
+            </div>
+          </div>
+          <div class="product-tab__block">
+            <div class="product-tab__description">
+              <div class="product-tab__title">Описание</div>
+              <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p><br><br>
+              <p>Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p><br><br>
+              <p>Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -136,95 +313,221 @@
   <div class="container">
     <div class="main-prods__inner">
       <div class="main-prods__head">
-        <div class="section-title main-prods__mtitle">Популярные товары</div>
-        <div class="only-pc"><a href="" class="main-prods__more">Показать ещё</a></div>
+        <div class="section-title main-prods__mtitle">С этим покупают</div>
       </div>
-      <div class="catalog">
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item1.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item2.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
       </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item1.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
-      </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item2.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
     </div>
     <div class="main-prods__footer"><a href="" class="main-prods__more">Показать ещё</a></div>
   </div>
 </section>
-<div class="business">
-  <div class="business__inner">
-    <div class="business__img">
-      <img src="images/dist/business.jpg" alt="">
-    </div>
-    <div class="business__content">
-      <div class="section-title">Чем мы занимаемся</div>
-      <div class="business__text">
-        Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.
-        <br><br>
-        Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде.
+<section class="main-prods">
+  <div class="container">
+    <div class="main-prods__inner">
+      <div class="main-prods__head">
+        <div class="section-title main-prods__mtitle">Похожее</div>
+        <div class="only-pc"><a href="" class="main-prods__more">Показать ещё</a></div>
       </div>
-      <button class="btn" data-class="contact">Связаться</button>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
+      </div>
     </div>
+    <div class="main-prods__footer"><a href="" class="main-prods__more">Показать ещё</a></div>
   </div>
-</div>
+</section>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -232,36 +535,39 @@
             <a href="/" class="footer__logo">
               <img src="images/dist/logo-black.svg" alt="">
             </a>
-          </div>
-          <div class="footer__center">
-            <div class="footer__item">
-              <div class="footer__title">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">info@example.ru</div>
+            <div class="footer__conts">
+              <a href="#" class="footer__cont">+7 (495) 555 32 54</a>
+              <a href="#" class="footer__cont">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</a>
             </div>
           </div>
-          <div class="footer__right">
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
+          <div class="footer__list footer__list--catalog">
+            <div class="footer__title">КАТАЛОГ</div>
+            <a href="#">Моющие и чистящие средства</a>
+            <a href="#">Красота и здоровье</a>
+            <a href="#">Товары для детей</a>
+            <a href="#">Популярные товарые</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">О НАС</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">ПОМОЩЬ</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">
-            <div class="footer__bot">Все права защищены</div>
-          </div>
-          <div class="footer__center">
-            <div class="footer__bot">Политика конфиденциальности</div>
-          </div>
-          <div class="footer__right">
-            <div class="footer__bot">Cookies</div>
-          </div>
+          <div class="footer__bot footer__bot--copy">Все права защищены</div>
+          <div class="footer__bot">Политика конфиденциальности</div>
+          <div class="footer__bot">Cookies</div>
         </div>
       </div>
     </footer>  
@@ -330,10 +636,10 @@
   </div>
 </div>
   </div>
-  <script
+  <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
     defer
-  ></script>
+  ></script> -->
   <script src="js/app.min.js"></script>
 
 </body>

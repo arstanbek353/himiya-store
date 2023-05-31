@@ -2,67 +2,48 @@
   margin-bottom: 14rem;
   &__inner {
     padding-top: 10rem;
+    position: relative;
   }
   &__head {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 30;
     display: flex;
-    margin-bottom: 10rem;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 121.2rem;
+    padding: 4rem 3rem;
+    box-shadow: 0px 0.4rem 2.6rem 1px rgba(0, 0, 0, 0.03);
+    border-radius: 0px 0px 1.5rem 1.5rem;
   }
   &__title {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #8E8E8E;
-    width: 39rem;
-  }
-  &__content {
-    width: 94.8rem;
-  }
-  &__top {
-    display: flex;
-    margin-bottom: 5rem;
   }
   &__left {
-    width: 60%;
     a {
       display: block;
       font-weight: 500;
-      font-size: 2.8rem;
+      font-size: 2rem;
       color: #000000;
-      margin-bottom: 2.8rem;
+      margin-bottom: 1.7rem;
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
   &__right {
-    width: 40%;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 149.4%;
     color: #000000;
   }
-  &__btn {
-    width: 100%;
-    border-radius: 0;
-    height: 10rem;
-    padding: 2rem 4.8rem;
-    justify-content: space-between;
-    img {
-    }
-  }
   &__map {
     height: 64.7rem;
-    display: none;
-    &.active {
-      display: block;
-    }
-  }
-  &__poster {
-    height: 64.7rem;
-    display: none;
-    &.active {
-      display: block;
-    }
-    object-fit: cover;
+    display: block;
   }
   @media (max-width: 48em) {
     margin-bottom: 10rem;
@@ -70,19 +51,14 @@
       padding-top: 1rem;
     }
     &__head {
+      width: 100%;
       display: block;
       margin-bottom: 4rem;
-    }
-    &__title {
-      display: none;
+      position: static;
+      transform: translateY(0);
     }
     &__content {
       width: 100%;
-    }
-    &__top {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-bottom: 3rem;
     }
     &__left {
       width: 100%;
@@ -96,15 +72,7 @@
       font-size: 1.4rem;
       margin-bottom: 2rem;
     }
-    &__btn {
-      height: 4.6rem;
-      padding: 1.3rem 1.6rem;
-      border-radius: 0.7rem;
-    }
     &__map {
-      height: 52rem;
-    }
-    &__poster {
       height: 52rem;
     }
 

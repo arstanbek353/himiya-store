@@ -4,6 +4,7 @@ export default function () {
     const sliderNode = element.querySelector('.main-slider__slider')
     const prevNode = element.querySelector('.main-slider__prev')
     const nextNode = element.querySelector('.main-slider__next')
+    const pagNode = element.querySelector('.main-slider__pag')
     const delay = 3000
     var swiper = new Swiper(sliderNode, {
       slidesPerView: 1,
@@ -13,6 +14,12 @@ export default function () {
       // autoplay: {
       //   delay: delay,
       // },
+      pagination: {
+        el: pagNode,
+        type: 'bullets',
+        bulletClass: 'bullet',
+        bulletActiveClass: 'active',
+      },
       navigation: {
         nextEl: nextNode,
         prevEl: prevNode,

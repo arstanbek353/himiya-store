@@ -70,24 +70,24 @@
   }
   &__conf {
     display: flex;
+    align-items: center;
     &-label {
       display: inline-block;
+      width: 1.7rem;
+      height: 1.7rem;
       span {
         display: inline-block;
-        width: 2.2rem;
-        height: 2.2rem;
-        border-radius: 100%;
-        border: 2px solid #000000;
+        width: 1.7rem;
+        height: 1.7rem;
+        border: 1px solid #000000;
+        border-radius: 0.4rem;
       }
       input:checked + span {
-        background-image: url(../images/dist/accepted.svg);
+        background-image: url(../images/dist/check-conf.svg);
         background-repeat: no-repeat;
-        background-size: 96%;
+        background-size: cover;
         background-position: center;
         border: 0;
-      }
-      input:focus + span {
-        opacity: 0.5;
       }
     }
     &-text {
@@ -172,6 +172,9 @@
       &--modal {
         flex-direction: column-reverse;
       }
+    }
+    &__conf {
+      font-size: 1.2rem;
     }
     &__send {
       width: 100%;

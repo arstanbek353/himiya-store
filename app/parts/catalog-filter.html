@@ -1,38 +1,109 @@
 <div class="catalog-filter">
-  <button class="catalog-filter__open" type="button">
-    <img src="images/dist/filter.svg" alt="">
-    Фильтры
-  </button>
-  <div class="catalog-filter__content">
+  <form class="catalog-filter__content">
     <div class="catalog-filter__head">
       Фильтры
       <button class="catalog-filter__close" type="button">
         <img src="images/dist/x-btn.svg" class="only-sp" alt="">
       </button>
     </div>
-    <div class="catalog-filter__catalog-head">
-      <!--#include virtual="/parts/catalog-head.html" -->
-    </div>
-    <div class="catalog-filter__list-title">Бренды</div>
     <div class="catalog-filter__list">
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
-      <a href="?brand=1" class="catalog-filter__item">Unirex</a>
-      <a href="?brand=1" class="catalog-filter__item">Escabel</a>
-      <a href="?brand=1" class="catalog-filter__item">Kirbiyik</a>
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Подкатегории <button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__checkboxes">
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_1" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для посуды</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_2" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для стекол и зеркал</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_3" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для туалета и ванной</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_4" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для кухни</span>
+            </label>
+          </div>
+          <button class="all" type="button"><span>Показать все</span> <span>Скрыть</span></button>
+        </div>
+      </div>
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Бренды<button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__radios">
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_1" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">UNIREX</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_2" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">SORISSO</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_3" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">ESCABEL</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_4" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Kirbiyik Kimya</span>
+            </label>
+          </div>
+          <button class="all" type="button"><span>Показать все</span> <span>Скрыть</span></button>
+        </div>
+      </div>
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Цена<button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__range">
+            <input 
+              type="text" 
+              class="js-range-slider" 
+              name="my_range_id" 
+              id="my_range_id" 
+              value=""
+              data-type="double"
+              data-min="0"
+              data-max="19000"
+              data-from="0"
+              data-to="10000"
+              data-hide-min-max="true"
+              data-hide-from-to="true"
+              data-input-values-separator="_"
+            />
+            <div class="catalog-filter__range-inputs">
+              <input type="number" 
+                value="0"
+                class="catalog-filter__range-input catalog-filter__range-input--from">
+              <span></span>
+              <input type="number" 
+                value="10000"
+                class="catalog-filter__range-input catalog-filter__range-input--to">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="catalog-filter__actions">
+      <button class="catalog-filter__reset" type="button">
+        <img src="images/dist/x-btn.svg" alt="">
+        Сбросить
+      </button>
+      <button class="btn catalog-filter__apply" type="button">
+        <img src="images/dist/check.svg" class="before" alt="">
+        Применить
+      </button>
+    </div>
+  </form>
 </div>

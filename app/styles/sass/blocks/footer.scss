@@ -1,83 +1,104 @@
 .footer {
-  background-color: #F2F3F5;
+  padding-top: 4rem;
 	&__inner {
     display: flex;
-    padding-top: 6rem;
-    padding-bottom: 8rem;
-  }
-  &__left {
-    width: 40%;
+    justify-content: space-between;
+    padding-bottom: 7rem;
   }
   &__logo {
     display: inline-block;
-    width: 14.8rem;
+    width: 17.3rem;
+    margin-bottom: 5rem;
   }
-  &__center,
-  &__right {
-    width: 30%;
-  }
-  &__item {
-    margin-bottom: 4.3rem;
+  &__cont {
+    display: block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 110.4%;
+    color: #7E7E7E;
+    margin-bottom: 2.8rem;
     &:last-child {
-      margin-right: 0;
+      margin-bottom: 0;
     }
   }
   &__title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #000101;
+    margin-bottom: 2.8rem;
+  }
+  &__list {
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: #555555;
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__bottom {
+    padding: 2rem 0;
+    display: flex;
     font-weight: 500;
-    font-size: 2.2rem;
-    line-height: 1.29;
-    margin-bottom: 1.2rem;
+    color: #A8A8A8;
+    border-top: 1px solid #EDECEC;
+  }
+  &__bot {
+    margin-right: 6rem;
+    &--copy {
+      margin-right: auto;
+    }
     &:last-child {
       margin-right: 0;
     }
   }
-  &__subtitle {
-    color: #A8A8A8;
-  }
-  &__bottom {
-    padding: 4rem 0;
-    display: flex;
-    font-weight: 500;
-    color: #A8A8A8;
-  }
   @media (max-width: 48em) {
+    padding-top: 3rem;
     &__inner {
-      display: block;
-      padding-top: 5rem;
-      padding-bottom: 1rem;
-    }
-    &__left {
-      width: 100%;
+      flex-wrap: wrap;
+      padding-bottom: 5rem;
     }
     &__logo {
-      display: inline-block;
-      width: 10.6rem;
-      margin-bottom: 5rem;
+      width: 12rem;
+      margin-bottom: 3rem;
     }
-    &__center,
-    &__right {
+    &__cont {
+      margin-bottom: 2rem;
+    }
+    &__left {
+      margin-bottom: 5rem;
       width: 100%;
     }
-    &__center .footer__title {
-      font-size: 1.6rem;
-    }
-    &__item {
-      margin-bottom: 3.5rem;
-    }
     &__title {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    &__list {
+      width: 50%;
+      &--catalog {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+      a {
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+      }
     }
     &__bottom {
       padding: 2rem 0;
-      display: block;
-      text-align: center;
-      .footer__right {
-        margin-top: 4rem;
-      }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     &__bot {
-      padding: 1rem;
+      margin-right: 0;
+      margin-bottom: 3rem;
+      &--copy {
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+      }
     }
   }
 }

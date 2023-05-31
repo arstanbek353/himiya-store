@@ -13,15 +13,17 @@
     margin-bottom: 2.7rem;
   }
   &__text {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     line-height: 138.4%;
-    color: #12121A;
+    color: #8E8E8E;
+    max-width: 49.7rem;
     a {
       color: #E78512;
     }
   }
   &__right {
-    width: 98rem;
+    flex-shrink: 0;
+    width: 88rem;
   }
   @media (max-width: 48em) {
     background-color: #fff;

@@ -11,50 +11,146 @@
   <link rel="icon" href="images/favicon.png">
   <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/app.min.css">
   <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="js/map.js"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
   <div class="root">
-    <header class="header light">
+    <header class="header dark">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img src="images/dist/logo.svg" class="light" alt="logo">
             <img src="images/dist/logo-black.svg" class="dark" alt="logo">
           </a>
-          <nav class="header__nav">
-            <div class="header__head">
-              <div class="header__header">
-                <div class="header__h-logo">
+          <nav class="nav header__nav">
+            <div class="nav__head">
+              <div class="nav__header">
+                <div class="nav__h-logo">
                   <img src="images/dist/logo-black.svg" alt="">
                 </div>
-                <button class="header__close">
+                <button class="header__close nav__close">
                   <img src="images/dist/modal-close.svg" alt="">
                 </button>
               </div>
-              <div class="header__nav-title">Меню</div>
+              <div class="nav__nav-title">Меню</div>
             </div>
-            <div class="header__nav-list">
-              <a href="/" class="header__links">О компании</a>
-              <a href="/" class="header__links">Каталоги</a>
-              <a href="/" class="header__links">Новости</a>
-              <a href="/" class="header__links">Контакты</a>
+            <div class="nav__nav-list">
+              <div class="nav__item nav__item--drop">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
+                </div>
+                <div class="nav__under">
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                      <a href="">Для кухни</a>
+                      <a href="">Прочее</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Акции</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">О компании</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Блог</a>
+                </div>
+              </div>
             </div>
-            <div class="header__contacts">
-              <a href="tomail:info@example.ru" class="header__contact">info@example.ru</a>
-              <a href="tel:+7 (495) 555 32 54" class="header__contact">+7 (495) 555 32 54</a>
-              <button class="btn header__req" data-class="contact">Оставить заявку</button>
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
             </div>
           </nav>
-          <button class="header__pen" data-class="contact">
-            <img src="images/dist/header-pen.svg" alt="">
-          </button>
           <button class="header__burger">
             <img src="images/dist/burger.svg" alt="">
           </button>
@@ -65,7 +161,7 @@
   <div class="container">
     <div class="brc">
       <a href="/" class="brc__link">Главная</a>
-      <a href="/" class="brc__link">Каталоги</a>
+      <a href="/" class="brc__link">Контакты</a>
     </div>
   </div>
 </div>
@@ -75,25 +171,16 @@
     <div class="contact__inner">
       <div class="contact__head">
         <div class="contact__title">Центральный офис</div>
-        <div class="contact__content">
-          <div class="contact__top">
-            <div class="contact__left">
-              <a href="tel:+7 (462) 324-55-23">+7 (462) 324-55-23</a>
-              <a href="tomail:info@example.ru">info@example.ru</a>
-            </div>
-            <div class="contact__right">
-              309556, Новосибирская область, город Серебряные Пруды, пер. Ломоносова, 13
-            </div>
-          </div>
-          <button class="btn contact__btn">
-            <span>Посмотреть на карте</span>
-            <img src="images/dist/map-arrow.svg" alt="">
-          </button>
+        <div class="contact__left">
+          <a href="tel:+7 (462) 324-55-23">+7 (462) 324-55-23</a>
+          <a href="mailto:info@example.ru">info@example.ru</a>
+        </div>
+        <div class="contact__right">
+          309556, Новосибирская область, <br> город Серебряные Пруды,<br> пер. Ломоносова, 13
         </div>
       </div>
       <div class="contact__map-wrapper">
-        <div class="contact__map active" id="map-contact"></div>
-        <img src="images/dist/map-poster.jpg" class="contact__poster" alt="">
+        <div class="contact__map" id="map-contact"></div>
       </div>
     </div>
   </div>
@@ -102,8 +189,8 @@
   <div class="container">
     <div class="contact-form__inner">
       <div class="contact-form__left">
-        <div class="contact-form__title">Запрос прайс-листа</div>
-        <div class="contact-form__text">Вы можете использовать форму для своих <br> предложений или вопросов. Так вы <br> поможете нам стать ещё лучше!</div>
+        <div class="contact-form__title">Обратная связь</div>
+        <div class="contact-form__text">Вы можете использовать форму для своих предложений или вопросов. Так вы поможете нам стать ещё лучше!</div>
       </div>
       <div class="contact-form__right">
         <form class="form js-contact-form" method="POST" action="/req.php">
@@ -149,36 +236,39 @@
             <a href="/" class="footer__logo">
               <img src="images/dist/logo-black.svg" alt="">
             </a>
-          </div>
-          <div class="footer__center">
-            <div class="footer__item">
-              <div class="footer__title">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">info@example.ru</div>
+            <div class="footer__conts">
+              <a href="#" class="footer__cont">+7 (495) 555 32 54</a>
+              <a href="#" class="footer__cont">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</a>
             </div>
           </div>
-          <div class="footer__right">
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
+          <div class="footer__list footer__list--catalog">
+            <div class="footer__title">КАТАЛОГ</div>
+            <a href="#">Моющие и чистящие средства</a>
+            <a href="#">Красота и здоровье</a>
+            <a href="#">Товары для детей</a>
+            <a href="#">Популярные товарые</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">О НАС</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">ПОМОЩЬ</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">
-            <div class="footer__bot">Все права защищены</div>
-          </div>
-          <div class="footer__center">
-            <div class="footer__bot">Политика конфиденциальности</div>
-          </div>
-          <div class="footer__right">
-            <div class="footer__bot">Cookies</div>
-          </div>
+          <div class="footer__bot footer__bot--copy">Все права защищены</div>
+          <div class="footer__bot">Политика конфиденциальности</div>
+          <div class="footer__bot">Cookies</div>
         </div>
       </div>
     </footer>  
@@ -247,10 +337,10 @@
   </div>
 </div>
   </div>
-  <script
+  <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
     defer
-  ></script>
+  ></script> -->
   <script src="js/app.min.js"></script>
 
 </body>

@@ -1,24 +1,47 @@
 .partners {
   margin-bottom: 17rem;
   &__head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+  }
+  &__slider {
+    height: 32rem;
   }
   &__slide {
-    width: 40.4rem;
-    margin-right: 2.5rem;
-    background: #FFFFFF;
-    border-radius: 2rem;
-    overflow: hidden;
+    flex-shrink: 0;
+    width: 25.4rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem;
+    position: relative;
     @include img-contain;
-    &:last-child {
-      margin-right: 0;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 4rem;
+      width: 1px;
+      height: 8rem;
+      background-color: #F1F1F1;
+    }
+    &:nth-child(odd)::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #F1F1F1;
     }
   }
+  &__footer {
+    display: none;
+  }
   @media (max-width: 48em) {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     &__inner {
       position: relative;
       padding-bottom: 7rem;
@@ -26,18 +49,41 @@
     &__head {
       margin-bottom: 3rem;
     }
+    &__mtitle {
+      font-size: 2.4rem;
+      margin-bottom: 0;
+    }
     &__subtitle {
       font-size: 1.4rem;
+      margin-bottom: 1.2rem;
     }
-    &__nav {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+    &__slider {
+      height: 30rem;
+      margin-bottom: 2.5rem;
     }
     &__slide {
-      width: 100%;
-      margin-right: 0;
+      width: 16.8rem;
+      height: 13.9rem;
+      margin-right: 1.1rem;
+      background: #FFFFFF;
       border-radius: 2rem;
+      overflow: hidden;
+      padding: 2.4rem;
+      margin-bottom: 1.1rem;
+      &::after, &::before {
+        display: none !important;
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .swiper-pagination-total {
+        color: #C9C9C9;
+      }
+    }
+    &__nav {
+      display: flex;
     }
   }
 }

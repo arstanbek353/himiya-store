@@ -1,0 +1,118 @@
+.blog-banner {
+  padding-top: 12rem;
+  margin-bottom: 14rem;
+  .brc {
+    margin-bottom: 6rem;
+  }
+  &__slide {
+    background: #FFFFFF;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3.4rem;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 30rem;
+      height: 200%;
+      position: absolute;
+      right: 50%;
+      top: -10rem;
+      background-color: #fff;
+      transform: rotate(20deg);
+      z-index: 3;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 3.7rem;
+      height: 200%;
+      position: absolute;
+      right: 49%;
+      top: -10rem;
+      background-color: $accent;
+      transform: rotate(20deg);
+      z-index: 3;
+    }
+  }
+  &__left {
+    position: relative;
+    z-index: 4;
+    max-width: 58rem;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: #0B0B0B;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    color: #0B0B0B;
+    margin-bottom: 4rem;
+  }
+  &__right {
+    position: relative;
+    z-index: 1;
+    width: 79.4rem;
+    height: 48rem;
+    @include img-cover;
+  }
+  @media (max-width: 48em) {
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    .brc {
+      margin-bottom: 2rem;
+    }
+    &__slide {
+      display: block;
+      padding: 2rem 1.5rem;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__left {
+      min-height: 30rem;
+    }
+    &__title {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    }
+    &__right {
+      display: none;
+    }
+  }
+}
+
+.blog-news {
+  margin-bottom: 17rem;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+  }
+  .main-news__img {
+    height: 24.7rem;
+  }
+  @media (max-width: 48em) {
+    margin-bottom: 5rem;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+    .main-news__img {
+      height: 8.7rem;
+    }
+  }
+}

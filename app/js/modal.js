@@ -16,6 +16,7 @@ export default function modal() {
       this.body ? this.body.classList.add('o-hidden') : null;
     }
     close() {
+      debugger
       this.modal ? this.modal.style['z-index'] = -150 : null;
       this.modal ? this.modal.classList.remove('active') : null;
       this.body ?  this.body.classList.remove('o-hidden') : null;

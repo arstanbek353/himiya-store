@@ -11,50 +11,146 @@
   <link rel="icon" href="images/favicon.png">
   <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/app.min.css">
   <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="js/map.js"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
   <div class="root">
-    <header class="header light">
+    <header class="header dark">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img src="images/dist/logo.svg" class="light" alt="logo">
             <img src="images/dist/logo-black.svg" class="dark" alt="logo">
           </a>
-          <nav class="header__nav">
-            <div class="header__head">
-              <div class="header__header">
-                <div class="header__h-logo">
+          <nav class="nav header__nav">
+            <div class="nav__head">
+              <div class="nav__header">
+                <div class="nav__h-logo">
                   <img src="images/dist/logo-black.svg" alt="">
                 </div>
-                <button class="header__close">
+                <button class="header__close nav__close">
                   <img src="images/dist/modal-close.svg" alt="">
                 </button>
               </div>
-              <div class="header__nav-title">Меню</div>
+              <div class="nav__nav-title">Меню</div>
             </div>
-            <div class="header__nav-list">
-              <a href="/" class="header__links">О компании</a>
-              <a href="/" class="header__links">Каталоги</a>
-              <a href="/" class="header__links">Новости</a>
-              <a href="/" class="header__links">Контакты</a>
+            <div class="nav__nav-list">
+              <div class="nav__item nav__item--drop">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
+                </div>
+                <div class="nav__under">
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                      <a href="">Для кухни</a>
+                      <a href="">Прочее</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Акции</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">О компании</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Блог</a>
+                </div>
+              </div>
             </div>
-            <div class="header__contacts">
-              <a href="tomail:info@example.ru" class="header__contact">info@example.ru</a>
-              <a href="tel:+7 (495) 555 32 54" class="header__contact">+7 (495) 555 32 54</a>
-              <button class="btn header__req" data-class="contact">Оставить заявку</button>
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
             </div>
           </nav>
-          <button class="header__pen" data-class="contact">
-            <img src="images/dist/header-pen.svg" alt="">
-          </button>
           <button class="header__burger">
             <img src="images/dist/burger.svg" alt="">
           </button>
@@ -63,66 +159,58 @@
     </header>
 
   <section class="main-slider">
-  <div class="main-slider__inner">
-    <div class="swiper-container main-slider__slider">
-      <div class="swiper-wrapper main-slider__wrapper">
-        <div class="swiper-slide main-slider__slide">
-          <div class="main-slider__img">
-            <img src="images/dist/main-slider-1.jpg" alt="">
-          </div>
-          <div class="container">
+  <div class="container">
+    <div class="main-slider__inner">
+      <div class="swiper-container main-slider__slider">
+        <div class="swiper-wrapper main-slider__wrapper">
+          <div class="swiper-slide main-slider__slide">
+            <div class="main-slider__img">
+              <img class="blur" src="images/dist/main-slider-1.png" alt="">
+              <img src="images/dist/main-slider-1.png" alt="">
+            </div>
             <div class="main-slider__content">
-              <div class="main-slider__left">
-                <div class="main-slider__title">МЫ ПРОДАЕМ</div>
-                <div class="main-slider__description">
-                  БЫТОВАЯ ХИМИЯ <br>
-                  ЛИЧНАЯ ГИГИЕНА <br>
-                  ПАМПЕРСЫ <br>
-                  БЫТОВАЯ ХИМИЯ <br>
-                </div>
-              </div>
-              <a href="/" class="main-slider__link">Подробнее</a>
-              <div class="main-slider__right">
-                <div class="main-slider__title main-slider__title--right">О КОМПАНИИ</div>
-                <div class="main-slider__text">
-                  Мы предлагаем полный спектр профессиональных услуг по <a href="">производству бытовой химии</a> любой степени сложности
-                </div>
+              <div class="main-slider__title">Ополаскиватели
+                 для полости рта</div>
+              <div class="main-slider__description">
+                Являясь одной из самых распространённых в мире сельскохозяйственных культур.
               </div>
             </div>
+            <a href="/" class="main-slider__link">Подробнее</a>
           </div>
-        </div>
-        <div class="swiper-slide main-slider__slide">
-          <div class="main-slider__img">
-            <img src="images/dist/main-slider-1.jpg" alt="">
-          </div>
-          <div class="container">
+          <div class="swiper-slide main-slider__slide">
+            <div class="main-slider__img">
+              <img class="only-pc" src="images/dist/main-slider-1-pc.png" alt="">
+              <img class="only-sp" src="images/dist/main-slider-1-sp.png" alt="">
+            </div>
             <div class="main-slider__content">
-              <div class="main-slider__left">
-                <div class="main-slider__title">МЫ ПРОДАЕМ</div>
-                <div class="main-slider__description">
-                  БЫТОВАЯ ХИМИЯ <br>
-                  ЛИЧНАЯ ГИГИЕНА <br>
-                  ПАМПЕРСЫ <br>
-                  БЫТОВАЯ ХИМИЯ <br>
-                </div>
-              </div>
-              <a href="/" class="main-slider__link">Подробнее</a>
-              <div class="main-slider__right">
-                <div class="main-slider__title main-slider__title--right">О КОМПАНИИ</div>
-                <div class="main-slider__text">
-                  Мы предлагаем полный спектр профессиональных услуг по <a href="">производству бытовой химии</a> любой степени сложности
-                </div>
+              <div class="main-slider__title">Ополаскиватели
+                 для полости рта</div>
+              <div class="main-slider__description">
+                Являясь одной из самых распространённых в мире сельскохозяйственных культур.
               </div>
             </div>
+            <a href="/" class="main-slider__link">Подробнее</a>
+          </div>
+          <div class="swiper-slide main-slider__slide">
+            <div class="main-slider__img">
+              <img class="only-pc" src="images/dist/main-slider-1-pc.png" alt="">
+              <img class="only-sp" src="images/dist/main-slider-1-sp.png" alt="">
+            </div>
+            <div class="main-slider__content">
+              <div class="main-slider__title">Ополаскиватели
+                 для полости рта</div>
+              <div class="main-slider__description">
+                Являясь одной из самых распространённых в мире сельскохозяйственных культур.
+              </div>
+            </div>
+            <a href="/" class="main-slider__link">Подробнее</a>
           </div>
         </div>
-      </div>
-      <div class="main-slider__controllers">
-        <div class="container">
-          <div class="main-slider__nav">
-            <button class="main-slider__prev slider-prev"></button>
-            <button class="main-slider__next slider-next"></button>
-          </div>
+        <div class="main-slider__nav">
+          <button class="main-slider__prev slider-prev"></button>
+          <button class="main-slider__next slider-next"></button>
+        </div>
+        <div class="main-slider__pag">
         </div>
       </div>
     </div>
@@ -132,104 +220,177 @@
   <div class="container">
     <div class="main-prods__inner">
       <div class="main-prods__head">
-        <div class="section-title main-prods__mtitle">Популярные товары</div>
+        <div class="section-title main-prods__mtitle">Новинки</div>
         <div class="only-pc"><a href="" class="main-prods__more">Показать ещё</a></div>
       </div>
-      <div class="catalog">
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item1.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item2.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
       </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item1.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
-      </div>
-    </div>
-  </a>
-  <a href="" class="catalog__item">
-    <div class="catalog__img">
-      <img src="images/dist/item2.png" alt="">
-    </div>
-    <div class="catalog__content">
-      <div>
-        <div class="catalog__title">UNIREX</div>
-        <div class="catalog__description">Чистящее средство для
-          ванны и раковины</div>
-        <div class="catalog__footer">
-          <div class="catalog__art">Артикул: 992887</div>
-          <div class="catalog__arrow"></div>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
     </div>
     <div class="main-prods__footer"><a href="" class="main-prods__more">Показать ещё</a></div>
   </div>
 </section>
-  <section class="main-about">
+  <section class="akcii">
   <div class="container">
-    <div class="main-about__inner">
-      <div class="main-about__left">
-        <div class="main-about__suptitle">О нас</div>
-        <div class="main-about__title">
-          МЫ - КРУПНАЯ КОМПАНИЯ <br>
-          <span>ПО ОПТОВОЙ ПРОДАЖЕ </span><br>
-          БЫТОВОЙ ХИМИИ
+    <div class="akcii__inner">
+      <div class="akcii__head">
+        <div class="section-title akcii__mtitle">Акции</div>
+        <div class="only-pc"><a href="" class="akcii__more">Все акции</a></div>
+      </div>
+      <div class="akcii__content">
+        <div class="akcii__left">
+          <a href="#" class="akcii__item" style="background-color: #FAB355;">
+            <div class="akcii__img">
+              <img class="blur" src="images/dist/akcii-1.png" alt="">
+              <img src="images/dist/akcii-1.png" alt="">
+            </div>
+            <div class="akcii__texts">
+              <div class="akcii__title">Чистящее средство</div>
+              <div class="akcii__text">Мы и наши партнеры готовы предлагать полный спектр услуг.</div>
+              <span class="akcii__btn">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="akcii__item" style="background-color: #7F93DA;">
+            <div class="akcii__img">
+              <img class="blur" src="images/dist/akcii-1.png" alt="">
+              <img src="images/dist/akcii-1.png" alt="">
+            </div>
+            <div class="akcii__texts">
+              <div class="akcii__title">Чистящее средство</div>
+              <div class="akcii__text">Мы и наши партнеры готовы предлагать полный спектр услуг.</div>
+              <span class="akcii__btn">Подробнее</span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="main-about__right">
-        <div class="main-about__text">Равным образом, курс на социально-ориентированный национальный проект влечет за собой процесс внедрения и модернизации существующих административных условий!</div>
-        <button class="btn main-about__req" data-class="contact">Связаться</button>
-      </div>
-      <div class="main-about__bottom">
-        <div class="main-about__content">
-          <div class="main-about__img main-about__img--1">
-            <img src="images/dist/video-poster1.jpg" alt="">
+        <div class="akcii__right">
+          <div class="swiper-container akcii__slider">
+            <div class="swiper-wrapper akcii__wrapper">
+              <a href="#" class="swiper-slide akcii__item akcii__slide" style="background-color: #477D42;">
+                <div class="akcii__tag">Скидки</div>
+                <div class="akcii__img">
+                  <img class="blur" src="images/dist/main-slider-1.png" alt="">
+                  <img src="images/dist/main-slider-1.png" alt="">
+                </div>
+                <div class="akcii__texts">
+                  <div class="akcii__title">Ополаскиватели SORISSO</div>
+                  <div class="akcii__text">Мы и наши партнеры готовы предлагать полный спектр услуг.</div>
+                  <span class="akcii__btn">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide akcii__item akcii__slide" style="background-color: #477D42;">
+                <div class="akcii__tag">Скидки</div>
+                <div class="akcii__img">
+                  <img class="blur" src="images/dist/main-slider-1.png" alt="">
+                  <img src="images/dist/main-slider-1.png" alt="">
+                </div>
+                <div class="akcii__texts">
+                  <div class="akcii__title">Ополаскиватели SORISSO</div>
+                  <div class="akcii__text">Мы и наши партнеры готовы предлагать полный спектр услуг.</div>
+                  <span class="akcii__btn">Подробнее</span>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="main-about__img main-about__img--2">
-            <img src="images/dist/video-poster2.jpg" alt="">
-          </div>
-          <div class="main-about__video">
-            <video src="" poster="/images/dist/poster1.jpg"></video>
+          <div class="akcii__pag"></div>
+          <div class="akcii__nav">
+            <button class="akcii__prev slider-prev"></button>
+            <button class="akcii__next slider-next"></button>
           </div>
         </div>
       </div>
@@ -246,211 +407,381 @@
             <img src="images/dist/advantages1.svg" alt="">
           </div>
           <div class="main-advantages__name">Индивидуальный <br> подход к клиенту</div>
+          <div class="main-advantages__text">Мы и наши партнеры готовы предлагать полный спектр услуг по производству косметики.</div>
         </div>
         <div class="main-advantages__item">
           <div class="main-advantages__icon">
             <img src="images/dist/advantages2.svg" alt="">
           </div>
           <div class="main-advantages__name">Индивидуальный<br> подход к клиенту</div>
+          <div class="main-advantages__text">Мы и наши партнеры готовы предлагать полный спектр услуг по производству косметики.</div>
         </div>
         <div class="main-advantages__item">
           <div class="main-advantages__icon">
             <img src="images/dist/advantages3.svg" alt="">
           </div>
           <div class="main-advantages__name">Соответствие<br> стандартам</div>
+          <div class="main-advantages__text">Мы и наши партнеры готовы предлагать полный спектр услуг по производству косметики.</div>
         </div>
         <div class="main-advantages__item">
           <div class="main-advantages__icon">
             <img src="images/dist/advantages4.svg" alt="">
           </div>
           <div class="main-advantages__name">Индивидуальный<br> подход к клиенту</div>
+          <div class="main-advantages__text">Мы и наши партнеры готовы предлагать полный спектр услуг по производству косметики.</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-  
-  <div class="about-stat">
-    <div class="container">
-      <div class="section-title">Компания сегодня</div>
-      <div class="about-stat__inner">
-        <div class="about-stat__left">
-          <div class="about-stat__item">
-            <div class="about-stat__n">
-              <div class="about-stat__v">500</div>
-              <div class="about-stat__c">единиц</div>
-            </div>
-            <div class="about-stat__name">товаров в каталоге</div>
-          </div>
-          <div class="about-stat__item">
-            <div class="about-stat__n">
-              <div class="about-stat__v">410</div>
-              <div class="about-stat__c">единиц</div>
-            </div>
-            <div class="about-stat__name">товаров в каталоге</div>
-          </div>
-          <div class="about-stat__item">
-            <div class="about-stat__n">
-              <div class="about-stat__v">341</div>
-              <div class="about-stat__c">единиц</div>
-            </div>
-            <div class="about-stat__name">товаров в каталоге</div>
-          </div>
-          <div class="about-stat__item">
-            <div class="about-stat__n">
-              <div class="about-stat__v">50</div>
-              <div class="about-stat__c">единиц</div>
-            </div>
-            <div class="about-stat__name">товаров в каталоге</div>
-          </div>
-        </div>
-        <div class="about-stat__right">
-          <div class="about-stat__text">
-            Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.
-            <br><br>
-            Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.
-            <br><br>
-            Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. Недостаток полезных веществ, содержащихся в том же мясе, например железа высокой биологической доступности, может вызвать серьезные проблемы со здоровьем.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  
   <div class="partners">
   <div class="container">
     <div class="partners__inner">
       <div class="partners__head">
-        <div>
-          <div class="section-title partners__mtitle">Наши партнеры</div>
-          <div class="partners__subtitle">Мы и наши партнеры готовы предлагать полный спектр <br> услуг по производству косметики, быт химии под СТМ</div>
+        <div class="partners__subtitle">Мы и наши партнеры предлагаем полный спектр услуг</div>
+        <div class="section-title partners__mtitle">Мы работаем с надежными партнерами</div>
+      </div>
+      <div class="swiper-container partners__slider">
+        <div class="swiper-wrapper partners__wrapper">
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner1.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner2.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
+          <div class="swiper-slide partners__slide">
+            <img src="images/dist/partner3.png" alt="">
+          </div>
         </div>
+      </div>
+      <div class="partners__footer">
+        <div class="partners__pag"></div>
         <div class="partners__nav">
           <button class="partners__prev slider-prev slider-prev--dark"></button>
           <button class="partners__next slider-next slider-next--dark"></button>
         </div>
       </div>
-      <div class="swiper-container partners__slider">
-        <div class="swiper-wrapper partners__wrapper">
-          <div class="swiper-slide partners__slide">
-            <img src="images/dist/partner1.jpg" alt="">
+    </div>
+  </div>
+</div>
+  <section class="main-prods">
+  <div class="container">
+    <div class="main-prods__inner">
+      <div class="main-prods__head">
+        <div class="section-title main-prods__mtitle">Популярное</div>
+        <div class="only-pc"><a href="" class="main-prods__more">Показать ещё</a></div>
+      </div>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
           </div>
-          <div class="swiper-slide partners__slide">
-            <img src="images/dist/partner1.jpg" alt="">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
           </div>
-          <div class="swiper-slide partners__slide">
-            <img src="images/dist/partner1.jpg" alt="">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
           </div>
-          <div class="swiper-slide partners__slide">
-            <img src="images/dist/partner1.jpg" alt="">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
           </div>
-          <div class="swiper-slide partners__slide">
-            <img src="images/dist/partner1.jpg" alt="">
+          <div class="swiper-slide main-prods__slide">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__img">
+                  <img src="images/dist/item1.png" alt="">
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__title">UNIREX</div>
+                  <div class="catalog__description">Чистящее средство для
+                    ванны и раковины</div>
+                  <div class="catalog__price">189 ₽</div>
+                </div>
+              </a>
+              <button class="catalog__to-fav"></button>
+              <button class="catalog__to-cart"></button>
+            </div>
+
           </div>
         </div>
+      </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
+      </div>
+    </div>
+    <div class="main-prods__footer"><a href="" class="main-prods__more">Показать ещё</a></div>
+  </div>
+</section>
+  <section class="main-prods">
+  <div class="container">
+    <div class="main-prods__inner">
+      <div class="main-prods__head">
+        <div class="section-title main-prods__mtitle">Новости</div>
+        <div class="only-pc"><a href="" class="main-prods__more">Все новости</a></div>
+      </div>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
+      </div>
+    </div>
+    <div class="main-prods__footer"><a href="" class="main-prods__more">Все новости</a></div>
+  </div>
+</section>
+  <div class="seo">
+  <div class="container">
+    <div class="seo__inner">
+      <div class="seo__left">
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+      </div>
+      <div class="seo__right">
+        <h1 class="seo__t">SEO-текст</h1>
+        <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p>
+        <br><br>
+        <p>
+          Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p>
+        <br><br>
+        <h2 class="seo__st">Подзаголовок</h2>
+        <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p>
+        <br><br>
+        <p>
+          Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p>
+        <br><br>
       </div>
     </div>
   </div>
 </div>
-  <div class="main-news">
+  <div class="discount">
   <div class="container">
-    <div class="main-news__inner">
-      <div class="main-news__head">
-        <div class="main-news__left">
-          <div class="section-title main-news__mtitle">Новости</div>
-          <div class="main-news__nav">
-            <button class="main-news__prev slider-prev slider-prev--dark"></button>
-            <button class="main-news__next slider-next slider-next--dark"></button>
-          </div>
-        </div>
-        <div class="main-news__right">
-          <div class="main-news__subtitle">Идейные соображения высшего порядка, а также <br> семантический разбор внешних противодействий.</div>
-          <div class="main-news__btns">
-            <a href="" class="btn main-news__all">Все новости</a>
-            <button class="btn btn--white main-news__req">Оставить заявку</button>
-          </div>
-        </div>
+    <div class="discount__inner">
+      <div class="discount__left">
+        <div class="discount__title">Скидка 15%</div>
+        <div class="discount__text">для новых подписчиков!</div>
       </div>
-      <div class="swiper-container main-news__slider">
-        <div class="swiper-wrapper main-news__wrapper">
-          <a href="" class="swiper-slide main-news__slide">
-            <div class="main-news__date">30 марта 2023 <span>Новости</span></div>
-            <div class="main-news__anons">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
-            <div class="main-news__more">
-              <span>Подробнее</span>
+      <div class="discount__right">
+        <div class="discount__form">
+          <form class="form" method="POST" action="/req.php">
+            <div class="form__inner">
+              <div class="form__item">
+                <input type="email" name="name" class="form__input" placeholder="Введите ваш Email" required>
+                <div class="only-pc"><button class="btn form__send">Отправить</button></div>
+              </div>
             </div>
-          </a>
-          <a href="" class="swiper-slide main-news__slide">
-            <div class="main-news__date">30 марта 2023 <span>Новости</span></div>
-            <div class="main-news__anons">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
-            <div class="main-news__more">
-              <span>Подробнее</span>
+            <div class="form__actions">
+              <div class="form__conf">
+                <label class="form__conf-label">
+                  <input type="checkbox" class="visually-hidden" required>
+                  <span></span>
+                </label>
+                <div class="form__conf-text">Я подтверждаю, что ознакомился с <a href="#">пользовательским соглашением</a></div>
+              </div>
             </div>
-          </a>
-          <a href="" class="swiper-slide main-news__slide">
-            <div class="main-news__date">30 марта 2023 <span>Новости</span></div>
-            <div class="main-news__anons">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
-            <div class="main-news__more">
-              <span>Подробнее</span>
-            </div>
-          </a>
-          <a href="" class="swiper-slide main-news__slide">
-            <div class="main-news__date">30 марта 2023 <span>Новости</span></div>
-            <div class="main-news__anons">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
-            <div class="main-news__more">
-              <span>Подробнее</span>
-            </div>
-          </a>
-          <a href="" class="swiper-slide main-news__slide">
-            <div class="main-news__date">30 марта 2023 <span>Новости</span></div>
-            <div class="main-news__anons">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
-            <div class="main-news__more">
-              <span>Подробнее</span>
-            </div>
-          </a>
+            <div class="only-sp"><button class="btn form__send">Отправить</button></div>
+          </form>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="contact-form">
-  <div class="container">
-    <div class="contact-form__inner">
-      <div class="contact-form__left">
-        <div class="contact-form__title">Запрос прайс-листа</div>
-        <div class="contact-form__text">Вы можете использовать форму для своих <br> предложений или вопросов. Так вы <br> поможете нам стать ещё лучше!</div>
-      </div>
-      <div class="contact-form__right">
-        <form class="form js-contact-form" method="POST" action="/req.php">
-          <div class="form__inner">
-            <div class="form__item form__item--50">
-              <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
-            </div>
-            <div class="form__item form__item--50">
-              <input type="email" name="email" class="form__input" placeholder="Почта" required>
-            </div>
-            <div class="form__item form__item--50">
-              <input type="tel" name="tel" class="form__input" placeholder="Телефон" required>
-            </div>
-            <div class="form__item form__item--50">
-              <select name="products" id="" class="form__select">
-                <option value="Products">Цель обращения</option>
-              </select>
-            </div>
-            <div class="form__item form__item--100">
-              <textarea name="comment" class="form__textarea" placeholder="Ваше сообщение" required maxlength="500"></textarea>
-            </div>
-          </div>
-          <div class="form__actions">
-            <div class="form__conf">
-              <label class="form__conf-label">
-                <input type="checkbox" class="visually-hidden" required>
-                <span></span>
-              </label>
-              <div class="form__conf-text">Отправляя форму, вы соглашаетесь <br> с политикой конфиденциальности</div>
-            </div>
-            <button class="btn form__send js-contact-btn">Отправить</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
@@ -463,36 +794,39 @@
             <a href="/" class="footer__logo">
               <img src="images/dist/logo-black.svg" alt="">
             </a>
-          </div>
-          <div class="footer__center">
-            <div class="footer__item">
-              <div class="footer__title">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">info@example.ru</div>
+            <div class="footer__conts">
+              <a href="#" class="footer__cont">+7 (495) 555 32 54</a>
+              <a href="#" class="footer__cont">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</a>
             </div>
           </div>
-          <div class="footer__right">
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
+          <div class="footer__list footer__list--catalog">
+            <div class="footer__title">КАТАЛОГ</div>
+            <a href="#">Моющие и чистящие средства</a>
+            <a href="#">Красота и здоровье</a>
+            <a href="#">Товары для детей</a>
+            <a href="#">Популярные товарые</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">О НАС</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">ПОМОЩЬ</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">
-            <div class="footer__bot">Все права защищены</div>
-          </div>
-          <div class="footer__center">
-            <div class="footer__bot">Политика конфиденциальности</div>
-          </div>
-          <div class="footer__right">
-            <div class="footer__bot">Cookies</div>
-          </div>
+          <div class="footer__bot footer__bot--copy">Все права защищены</div>
+          <div class="footer__bot">Политика конфиденциальности</div>
+          <div class="footer__bot">Cookies</div>
         </div>
       </div>
     </footer>  
@@ -561,10 +895,10 @@
   </div>
 </div>
   </div>
-  <script
+  <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
     defer
-  ></script>
+  ></script> -->
   <script src="js/app.min.js"></script>
 
 </body>

@@ -1,0 +1,28 @@
+.brands {
+  margin-bottom: 15rem;
+  padding-top: 13rem;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.2rem;
+  }
+  &__item {
+    background: #FFFFFF;
+    box-shadow: 0.7rem 1.2rem 2.1rem rgba(0, 0, 0, 0.05);
+    border-radius: 1.8rem;
+    padding: 6rem 8rem;
+    @include img-contain;
+  }
+  @media (max-width: 48rem) {
+    margin-bottom: 8rem;
+    padding-top: 10rem;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.1rem;
+    }
+    &__item {
+      border-radius: 0.8rem;
+      padding: 3rem 2.4rem;
+    }
+  }
+}

@@ -1,13 +1,19 @@
 .main-prods {
   margin-bottom: 17rem;
+  .catalog__item {
+    box-shadow: none;
+  }
+  &__inner {
+    position: relative;
+  }
   &__head {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 4rem;
   }
   &__mtitle {
     margin-bottom: 0;
+    margin-right: 3rem;
   }
   &__more {
     display: inline-flex;
@@ -15,6 +21,7 @@
     color: $accent;
     font-weight: 600;
     font-size: 1.8rem;
+    padding-bottom: 1rem;
     &::after {
       margin-left: 3rem;
       content: "";
@@ -24,6 +31,34 @@
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/dist/arrow2.svg);
+    }
+  }
+  &__slide {
+    width: 36rem;
+    margin-right: 2.7rem;
+    display: flex;
+    height: auto;
+    &>div {
+      flex-grow: 1;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__ctrl {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    .slider-prev {
+      margin: 0;
+    }
+  }
+  &__pag {
+    margin: 0 2.7rem;
+    .swiper-pagination-total {
+      color: #C9C9C9;
     }
   }
   &__footer {
@@ -42,15 +77,38 @@
     }
     &__more {
       font-size: 1.4rem;
+      border: 1px solid #C4C4C4;
+      border-radius: 5.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      width: 100%;
       &::after {
         margin-left: 1rem;
       }
+    }
+    &__slide {
+      width: 16.8rem;
+      margin-right: 0.9rem;
+    }
+    &__ctrl {
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1.5rem 0 2rem;
+      .slider-prev {
+        margin-right: 1rem;
+      }
+    }
+    &__pag {
+      order: -1;
     }
     &__footer {
       display: flex;
       justify-content: flex-end;
       margin-top: 3rem;
     }
-
   }
 }

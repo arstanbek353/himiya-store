@@ -21,7 +21,7 @@ function initMap() {
     const markerContact = new google.maps.Marker({
       position: uluru,
       map: mapContact,
-      title: "ICAPIA",
+      title: "name",
       icon: iconBase + 'marker.svg'
     });
 

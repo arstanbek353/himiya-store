@@ -1,5 +1,5 @@
 
-const light = document.querySelectorAll('.contact-brc, .product-detail')
+const light = document.querySelectorAll('.contact-brc, .product-detail, .faq-banner')
 export default function nav() {
   class Nav {
     constructor() {
@@ -10,6 +10,9 @@ export default function nav() {
       this.navNode = document.querySelector(`.header__nav`)
       this.burgerNode = document.querySelector('.header__burger')
       this.closeNode = document.querySelector('.header__close')
+      this.items = document.querySelectorAll('.nav__item--drop')
+      this.arrowsF = document.querySelectorAll('.nav__arrow--f')
+      this.drops = document.querySelectorAll('.nav__under')
       this.init()
     }
     init() {
@@ -22,13 +25,16 @@ export default function nav() {
         this.header.classList.remove('dark')
         this.header.classList.add('light')
       }
+      this.dropHandler()
     }
     open() {
+      console.log('n open')
       this.navNode ? this.navNode.classList.add('active') : null;
       this.burgerNode ? this.burgerNode.classList.add('active') : null;
       this.body ? this.body.classList.add('o-hidden') : null;
     }
     close() {
+      console.log('n close')
       this.navNode ? this.navNode.classList.remove('active') : null;
       this.burgerNode ? this.burgerNode.classList.remove('active') : null;
       this.body ? this.body.classList.remove('o-hidden') : null;
@@ -67,6 +73,25 @@ export default function nav() {
         }
         lastScroll = this.htmlNode.scrollTop
 
+      })
+    }
+    dropHandler() {
+      this.arrowsF.forEach((arrow, idx) => {
+        arrow.addEventListener('click', () => {
+          this.items.forEach((i, idex) => idex !== idx ? i.classList.remove('active') : null)
+          this.items[idx].classList.toggle('active')
+        })
+      })
+      this.items.forEach((item, idx) => {
+        const arrows = item.querySelectorAll('.nav__arrow--s')
+        const items = item.querySelectorAll('.nav__under-item')
+
+        arrows.forEach((arrow, idx) => {
+          arrow.addEventListener('click', () => {
+            items.forEach((i, idex) => idex !== idx ? i.classList.remove('active') : null)
+            items[idx].classList.toggle('active')
+          })
+        })
       })
     }
   }

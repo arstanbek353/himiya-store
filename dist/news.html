@@ -11,50 +11,146 @@
   <link rel="icon" href="images/favicon.png">
   <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/app.min.css">
   <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script type="module" src="js/map.js"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body>
   <div class="root">
-    <header class="header light">
+    <header class="header dark">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img src="images/dist/logo.svg" class="light" alt="logo">
             <img src="images/dist/logo-black.svg" class="dark" alt="logo">
           </a>
-          <nav class="header__nav">
-            <div class="header__head">
-              <div class="header__header">
-                <div class="header__h-logo">
+          <nav class="nav header__nav">
+            <div class="nav__head">
+              <div class="nav__header">
+                <div class="nav__h-logo">
                   <img src="images/dist/logo-black.svg" alt="">
                 </div>
-                <button class="header__close">
+                <button class="header__close nav__close">
                   <img src="images/dist/modal-close.svg" alt="">
                 </button>
               </div>
-              <div class="header__nav-title">Меню</div>
+              <div class="nav__nav-title">Меню</div>
             </div>
-            <div class="header__nav-list">
-              <a href="/" class="header__links">О компании</a>
-              <a href="/" class="header__links">Каталоги</a>
-              <a href="/" class="header__links">Новости</a>
-              <a href="/" class="header__links">Контакты</a>
+            <div class="nav__nav-list">
+              <div class="nav__item nav__item--drop">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
+                </div>
+                <div class="nav__under">
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                      <a href="">Для кухни</a>
+                      <a href="">Прочее</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Акции</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">О компании</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Блог</a>
+                </div>
+              </div>
             </div>
-            <div class="header__contacts">
-              <a href="tomail:info@example.ru" class="header__contact">info@example.ru</a>
-              <a href="tel:+7 (495) 555 32 54" class="header__contact">+7 (495) 555 32 54</a>
-              <button class="btn header__req" data-class="contact">Оставить заявку</button>
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
             </div>
           </nav>
-          <button class="header__pen" data-class="contact">
-            <img src="images/dist/header-pen.svg" alt="">
-          </button>
           <button class="header__burger">
             <img src="images/dist/burger.svg" alt="">
           </button>
@@ -62,110 +158,314 @@
       </div>
     </header>
 <div class="news-banner">
-  <div class="news-banner__bg">
-    <img src="images/dist/catalog-banner.jpg" alt="">
-  </div>
   <div class="container">
+    <div class="brc">
+      <a href="/" class="brc__link">Главная</a>
+      <a href="/" class="brc__link">Новости</a>
+    </div>
+    <div class="section-title news-banner__cap">Новости</div>
     <div class="news-banner__inner">
-      <div class="brc">
-        <a href="/" class="brc__link">Главная</a>
-        <a href="/" class="brc__link">Новости</a>
-      </div>
-      <div class="news-banner__title">Новости</div>
-      <div class="news-banner__text">Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». </div>
-    </div>
-  </div>
-</div>
-<div class="news-head">
-  <div class="container">
-    <div class="news-head__sort">
-      <a href="/?sort=all" class="news-head__item active">Все публикации</a>
-      <a href="/?sort=news" class="news-head__item">Новости</a>
-      <a href="/?sort=arts" class="news-head__item">Статьи</a>
-    </div>
-  </div>
-</div>
-<div class="news">
-  <div class="news__inner">
-    <div class="news__list">
-      <a href="" class="news__item">
-        <div class="container">
-          <div class="news__img">
-            <img src="images/dist/news1.jpg" alt="">
-          </div>
-          <div class="news__content">
-            <div class="news__date">
-              <span>15.04.2023</span> <b>СОБЫТИЯ</b>
-            </div>
-            <div class="news__title">Человеческий организм получает почти все необходимые вещества именно через пищу
-            </div>
-            <div class="news__text">Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис
-              занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли
-              «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту
-              сельскохозяйственную культуру важнейшей на планете.</div>
-          </div>
+      <a href="#" class="news-banner__left">
+        <div class="news-banner__img">
+          <img src="images/dist/business.jpg" alt="">
+        </div>
+        <div class="news-banner__content">
+          <div class="news-banner__suptitle">Технологии</div>
+          <div class="news-banner__title">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
+          <div class="news-banner__date">час назад</div>
         </div>
       </a>
-      <a href="" class="news__item">
-        <div class="container">
-          <div class="news__img">
-            <img src="images/dist/news1.jpg" alt="">
+      <div class="news-banner__right">
+        <a href="#" class="news-banner__item">
+          <div class="news-banner__img">
+            <img src="images/dist/business.jpg" alt="">
           </div>
-          <div class="news__content">
-            <div class="news__date">
-              <span>15.04.2023</span> <b>СОБЫТИЯ</b>
-            </div>
-            <div class="news__title">Человеческий организм получает почти все необходимые вещества именно через пищу
-            </div>
-            <div class="news__text">Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис
-              занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли
-              «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту
-              сельскохозяйственную культуру важнейшей на планете.</div>
+          <div class="news-banner__content">
+            <div class="news-banner__suptitle">Технологии</div>
+            <div class="news-banner__title">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
+            <div class="news-banner__date">час назад</div>
           </div>
-        </div>
-      </a>
+        </a>
+        <a href="#" class="news-banner__item">
+          <div class="news-banner__img">
+            <img src="images/dist/business.jpg" alt="">
+          </div>
+          <div class="news-banner__content">
+            <div class="news-banner__suptitle">Технологии</div>
+            <div class="news-banner__title">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
+            <div class="news-banner__date">час назад</div>
+          </div>
+        </a>
+        <a href="#" class="news-banner__item">
+          <div class="news-banner__img">
+            <img src="images/dist/business.jpg" alt="">
+          </div>
+          <div class="news-banner__content">
+            <div class="news-banner__suptitle">Технологии</div>
+            <div class="news-banner__title">МБМ запустил формат нейротренингов в темноте для предпринимателей Москвы</div>
+            <div class="news-banner__date">час назад</div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
-<div class="contact-form">
+<section class="main-prods">
   <div class="container">
-    <div class="contact-form__inner">
-      <div class="contact-form__left">
-        <div class="contact-form__title">Запрос прайс-листа</div>
-        <div class="contact-form__text">Вы можете использовать форму для своих <br> предложений или вопросов. Так вы <br> поможете нам стать ещё лучше!</div>
+    <div class="main-prods__inner">
+      <div class="main-prods__head">
+        <div class="section-title main-prods__mtitle">Другие статьи</div>
       </div>
-      <div class="contact-form__right">
-        <form class="form js-contact-form" method="POST" action="/req.php">
-          <div class="form__inner">
-            <div class="form__item form__item--50">
-              <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
-            </div>
-            <div class="form__item form__item--50">
-              <input type="email" name="email" class="form__input" placeholder="Почта" required>
-            </div>
-            <div class="form__item form__item--50">
-              <input type="tel" name="tel" class="form__input" placeholder="Телефон" required>
-            </div>
-            <div class="form__item form__item--50">
-              <select name="products" id="" class="form__select">
-                <option value="Products">Цель обращения</option>
-              </select>
-            </div>
-            <div class="form__item form__item--100">
-              <textarea name="comment" class="form__textarea" placeholder="Ваше сообщение" required maxlength="500"></textarea>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="form__actions">
-            <div class="form__conf">
-              <label class="form__conf-label">
-                <input type="checkbox" class="visually-hidden" required>
-                <span></span>
-              </label>
-              <div class="form__conf-text">Отправляя форму, вы соглашаетесь <br> с политикой конфиденциальности</div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
             </div>
-            <button class="btn form__send js-contact-btn">Отправить</button>
           </div>
-        </form>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
+      </div>
+    </div>
+    <div class="main-prods__footer"><a href="" class="main-prods__more">Все новости</a></div>
+  </div>
+</section>
+<section class="main-prods">
+  <div class="container">
+    <div class="main-prods__inner">
+      <div class="main-prods__head">
+        <div class="section-title main-prods__mtitle">Другие статьи</div>
+      </div>
+      <div class="swiper-container main-prods__slider">
+        <div class="swiper-wrapper main-prods__wrapper">
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-prods__slide">
+            <div class="main-news__item">
+              <a href="#">
+                <div class="main-news__img">
+                  <img src="images/dist/business.jpg" alt="">
+                </div>
+                <div class="main-news__content">
+                  <div class="main-news__date">02 марта 09:50</div>
+                  <div class="main-news__title">Чистящее средство для
+ванны и раковины</div>
+                  <div class="main-news__text">Актуальные новинки от наших поставщиков: уникальные товары</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-prods__ctrl">
+        <button class="main-prods__prev slider-prev"></button>
+        <div class="main-prods__pag"></div>
+        <button class="main-prods__next slider-next"></button>
+      </div>
+    </div>
+    <div class="main-prods__footer"><a href="" class="main-prods__more">Все новости</a></div>
+  </div>
+</section>
+<div class="seo">
+  <div class="container">
+    <div class="seo__inner">
+      <div class="seo__left">
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+        <div class="seo__l-item">
+          <div class="seo__l-i-t">500
+            <span>единиц</span>
+          </div>
+          <div class="seo__l-i-d">товаров в каталоге</div>
+        </div>
+      </div>
+      <div class="seo__right">
+        <h1 class="seo__t">SEO-текст</h1>
+        <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p>
+        <br><br>
+        <p>
+          Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p>
+        <br><br>
+        <h2 class="seo__st">Подзаголовок</h2>
+        <p>Наша компания является эксклюзивным дистрибьютором торговых марок производителей из Турции. Являясь одной из самых распространённых в мире сельскохозяйственных культур, рис занимает главенствующую позицию в национальной кухне сотен народов. В России до XIX века рис называли «сарацинское зерно». Более половины населения Земли питаются в основном именно рисом, что делает эту сельскохозяйственную культуру важнейшей на планете. В некоторых странах Азии из этого растения готовят такие напитки, как вино и пиво. Из рисовых зерён делают так называемую съедобную рисовую бумагу, применяемую в кондитерском деле.</p>
+        <br><br>
+        <p>
+          Здоровый праздничный ужин вовсе не обязательно должен состоять из шпината, гречки и вареной куриной грудки. Самыми лучшими способами приготовления еды являются следующие: варка на пару, запекание или варка в воде. Помимо стандартных мандаринов и ананасов, отличным украшением любого стола станут необычные, экзотические фрукты. Здоровой может быть даже выпечка, если она приготовлена на пару.</p>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="discount">
+  <div class="container">
+    <div class="discount__inner">
+      <div class="discount__left">
+        <div class="discount__title">Скидка 15%</div>
+        <div class="discount__text">для новых подписчиков!</div>
+      </div>
+      <div class="discount__right">
+        <div class="discount__form">
+          <form class="form" method="POST" action="/req.php">
+            <div class="form__inner">
+              <div class="form__item">
+                <input type="email" name="name" class="form__input" placeholder="Введите ваш Email" required>
+                <div class="only-pc"><button class="btn form__send">Отправить</button></div>
+              </div>
+            </div>
+            <div class="form__actions">
+              <div class="form__conf">
+                <label class="form__conf-label">
+                  <input type="checkbox" class="visually-hidden" required>
+                  <span></span>
+                </label>
+                <div class="form__conf-text">Я подтверждаю, что ознакомился с <a href="#">пользовательским соглашением</a></div>
+              </div>
+            </div>
+            <div class="only-sp"><button class="btn form__send">Отправить</button></div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -178,36 +478,39 @@
             <a href="/" class="footer__logo">
               <img src="images/dist/logo-black.svg" alt="">
             </a>
-          </div>
-          <div class="footer__center">
-            <div class="footer__item">
-              <div class="footer__title">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">info@example.ru</div>
+            <div class="footer__conts">
+              <a href="#" class="footer__cont">+7 (495) 555 32 54</a>
+              <a href="#" class="footer__cont">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</a>
             </div>
           </div>
-          <div class="footer__right">
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
-            <div class="footer__item">
-              <div class="footer__title">+7 (495) 555 32 54</div>
-              <div class="footer__subtitle">Приемная</div>
-            </div>
+          <div class="footer__list footer__list--catalog">
+            <div class="footer__title">КАТАЛОГ</div>
+            <a href="#">Моющие и чистящие средства</a>
+            <a href="#">Красота и здоровье</a>
+            <a href="#">Товары для детей</a>
+            <a href="#">Популярные товарые</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">О НАС</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">ПОМОЩЬ</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">
-            <div class="footer__bot">Все права защищены</div>
-          </div>
-          <div class="footer__center">
-            <div class="footer__bot">Политика конфиденциальности</div>
-          </div>
-          <div class="footer__right">
-            <div class="footer__bot">Cookies</div>
-          </div>
+          <div class="footer__bot footer__bot--copy">Все права защищены</div>
+          <div class="footer__bot">Политика конфиденциальности</div>
+          <div class="footer__bot">Cookies</div>
         </div>
       </div>
     </footer>  
@@ -276,10 +579,10 @@
   </div>
 </div>
   </div>
-  <script
+  <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
     defer
-  ></script>
+  ></script> -->
   <script src="js/app.min.js"></script>
 
 </body>
