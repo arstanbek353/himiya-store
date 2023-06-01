@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+  <title>Быт.химия</title>
+  <meta name="description" content="Быт.химия">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="images/favicon.png">
+  <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+  <script src="https://unpkg.com/@googlemaps/markerclusterer@2.0.15/dist/index.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="module" src="js/map.js"></script>
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+</head>
+
+<body>
+  <div class="root">
+    <header class="header dark">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <img src="images/dist/logo.svg" class="light" alt="logo">
+            <img src="images/dist/logo-black.svg" class="dark" alt="logo">
+          </a>
+          <nav class="nav header__nav">
+            <div class="nav__head">
+              <div class="nav__header">
+                <div class="nav__h-logo">
+                  <img src="images/dist/logo-black.svg" alt="">
+                </div>
+                <button class="header__close nav__close">
+                  <img src="images/dist/modal-close.svg" alt="">
+                </button>
+              </div>
+              <div class="nav__nav-title">Меню</div>
+            </div>
+            <div class="nav__nav-list">
+              <div class="nav__item nav__item--drop">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Каталог</a>
+                  <div class="nav__arrow nav__arrow--f"></div>
+                </div>
+                <div class="nav__under">
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Моющие и чистящие средства</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                      <a href="">Для кухни</a>
+                      <a href="">Прочее</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Красота и здоровье</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                      <a href="">Для стекол и зеркал</a>
+                      <a href="">Для туалета и ванной</a>
+                    </div>
+                  </div>
+                  <div class="nav__under-item">
+                    <div class="nav__under-title">
+                      <a href="" class="nav__under-link">Товары для детей</a>
+                      <div class="nav__arrow nav__arrow--s"></div>
+                    </div>
+                    <div class="nav__under-list">
+                      <a href="">Для посуды</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Акции</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">О компании</a>
+                </div>
+              </div>
+              <div class="nav__item">
+                <div class="nav__title">
+                  <a href="/" class="nav__link">Блог</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav__footer">
+              <div class="nav__search">
+                <div class="search">
+                  <button class="search__open">
+                    <img src="images/dist/search.svg" alt="">
+                  </button>
+                  <div class="search__inner">
+                    <div class="search__label">
+                      <input type="text" class="search__input" placeholder="Поиск...">
+                      <button class="search__close">
+                        <img src="images/dist/modal-close.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="search__drop">
+                      <div class="search__list">
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                        <a href="/" class="search__item">
+                          <div class="search__img">
+                            <img src="images/dist/item1.png" alt="">
+                          </div>
+                          <div class="search__content">
+                            <div class="search__brand">brand</div>
+                            <div class="search__name">name</div>
+                            <div class="search__price">price</div>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="/" class="search__all">Каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__c">
+                <a href="#" class="nav__log">
+                  <img src="images/dist/account.png" alt="">
+                </a>
+                <a href="#" class="nav__cart">
+                  <img src="images/dist/cart.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </nav>
+          <button class="header__burger">
+            <img src="images/dist/burger.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </header>
+
+  <div class="catalog-wrapper">
+    <div class="container">
+      <div class="catalog-wrapper__head">
+        <div class="catalog-head">
+  <div class="brc">
+    <a href="/" class="brc__link">Главная</a>
+    <a href="/" class="brc__link active">Каталог</a>
+  </div>
+  <div class="catalog-head__title">Моющие и чистящие средства для посуды</div>
+  <form class="catalog-head__sort">
+    <label class="catalog-head__label">
+      <input type="radio" name="sort" value="sort_1" class="catalog-head__input" hidden checked>
+      <span class="catalog-head__label-text">Новинки</span>
+    </label>
+    <label class="catalog-head__label">
+      <input type="radio" name="sort" value="sort_2" class="catalog-head__input" hidden>
+      <span class="catalog-head__label-text">Для посуды</span>
+    </label>
+    <label class="catalog-head__label">
+      <input type="radio" name="sort" value="sort_3" class="catalog-head__input" hidden>
+      <span class="catalog-head__label-text">Для стекол и зеркал</span>
+    </label>
+    <label class="catalog-head__label">
+      <input type="radio" name="sort" value="sort_5" class="catalog-head__input" hidden>
+      <span class="catalog-head__label-text">Для туалета и ванной</span>
+    </label>
+    <label class="catalog-head__label">
+      <input type="radio" name="sort" value="sort_6" class="catalog-head__input" hidden>
+      <span class="catalog-head__label-text">Для кухни</span>
+    </label>
+  </form>
+</div>
+      </div>
+      <div class="catalog-wrapper__razdel">
+        <div class="catalog-razdel">
+  <a href="#" class="catalog-razdel__item">
+    <div class="catalog-razdel__texts">
+      <div class="catalog-razdel__title">Для стекол и зеркал</div>
+      <div class="catalog-razdel__more">Перейти</div>
+    </div>
+    <div class="catalog-razdel__img">
+      <img class="blur" src="images/dist/akcii-1.png" alt="">
+      <img src="images/dist/akcii-1.png" alt="">
+    </div>
+  </a>
+  <a href="#" class="catalog-razdel__item">
+    <div class="catalog-razdel__texts">
+      <div class="catalog-razdel__title">Для стекол и зеркал</div>
+      <div class="catalog-razdel__more">Перейти</div>
+    </div>
+    <div class="catalog-razdel__img">
+      <img class="blur" src="images/dist/akcii-1.png" alt="">
+      <img src="images/dist/akcii-1.png" alt="">
+    </div>
+  </a>
+  <a href="#" class="catalog-razdel__item">
+    <div class="catalog-razdel__texts">
+      <div class="catalog-razdel__title">Для стекол и зеркал</div>
+      <div class="catalog-razdel__more">Перейти</div>
+    </div>
+    <div class="catalog-razdel__img">
+      <img class="blur" src="images/dist/akcii-1.png" alt="">
+      <img src="images/dist/akcii-1.png" alt="">
+    </div>
+  </a>
+  <a href="#" class="catalog-razdel__item">
+    <div class="catalog-razdel__texts">
+      <div class="catalog-razdel__title">Для стекол и зеркал</div>
+      <div class="catalog-razdel__more">Перейти</div>
+    </div>
+    <div class="catalog-razdel__img">
+      <img class="blur" src="images/dist/akcii-1.png" alt="">
+      <img src="images/dist/akcii-1.png" alt="">
+    </div>
+  </a>
+</div>
+      </div>
+      <div class="catalog-wrapper__inner">
+        <div class="catalog-wrapper__aside">
+          <div class="catalog-filter">
+  <form class="catalog-filter__content">
+    <div class="catalog-filter__head">
+      Фильтры
+      <button class="catalog-filter__close" type="button">
+        <img src="images/dist/x-btn.svg" class="only-sp" alt="">
+      </button>
+    </div>
+    <div class="catalog-filter__list">
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Подкатегории <button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__checkboxes">
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_1" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для посуды</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_2" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для стекол и зеркал</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_3" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для туалета и ванной</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="checkbox" name="name_4" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Для кухни</span>
+            </label>
+          </div>
+          <button class="all" type="button"><span>Показать все</span> <span>Скрыть</span></button>
+        </div>
+      </div>
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Бренды<button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__radios">
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_1" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">UNIREX</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_2" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">SORISSO</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_3" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">ESCABEL</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input type="radio" name="radio_name" value="radio_4" class="catalog-filter__radiocheck" hidden>
+              <span class="catalog-filter__check"></span>
+              <span class="catalog-filter__input-name">Kirbiyik Kimya</span>
+            </label>
+          </div>
+          <button class="all" type="button"><span>Показать все</span> <span>Скрыть</span></button>
+        </div>
+      </div>
+      <div class="catalog-filter__item">
+        <div class="catalog-filter__title">Цена<button type="button" class="open"></button></div>
+        <div class="catalog-filter__cr-box opened">
+          <div class="catalog-filter__range">
+            <input 
+              type="text" 
+              class="js-range-slider" 
+              name="my_range_id" 
+              id="my_range_id" 
+              value=""
+              data-type="double"
+              data-min="0"
+              data-max="19000"
+              data-from="0"
+              data-to="10000"
+              data-hide-min-max="true"
+              data-hide-from-to="true"
+              data-input-values-separator="_"
+            />
+            <div class="catalog-filter__range-inputs">
+              <input type="number" 
+                value="0"
+                class="catalog-filter__range-input catalog-filter__range-input--from">
+              <span></span>
+              <input type="number" 
+                value="10000"
+                class="catalog-filter__range-input catalog-filter__range-input--to">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-filter__actions">
+      <button class="catalog-filter__reset" type="button">
+        <img src="images/dist/x-btn.svg" alt="">
+        Сбросить
+      </button>
+      <button class="btn catalog-filter__apply" type="button">
+        <img src="images/dist/check.svg" class="before" alt="">
+        Применить
+      </button>
+    </div>
+  </form>
+</div>
+        </div>
+        <div class="catalog-wrapper__content js-catalog-content">
+          <div class="catalog-sort">
+  <div class="catalog-sort__left">Показано товаров: <span>1529</span></div>
+  <div class="catalog-sort__right">
+    <button class="catalog-filter__open catalog-sort__select" type="button">
+      <div class="catalog-sort__name catalog-sort__name--filter">Фильтры</div>
+    </button>
+    <div class="catalog-sort__select catalog-sort__select--name">
+      <div class="catalog-sort__name">Название:</div>
+      <select name="" id="">
+        <option value="1">А - Я</option>
+        <option value="2">Я - А</option>
+      </select>
+    </div>
+    <div class="catalog-sort__select catalog-sort__select--price">
+      <div class="catalog-sort__name">Цена:</div>
+      <select name="" id="">
+        <option value="1">По возрастанию</option>
+        <option value="2">По убыванию</option>
+      </select>
+    </div>
+  </div>
+</div>
+          <div class="catalog">
+  <div class="catalog__item">
+    <a href="#">
+      <div class="catalog__img">
+        <img src="images/dist/item1.png" alt="">
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__title">UNIREX</div>
+        <div class="catalog__description">Чистящее средство для
+          ванны и раковины</div>
+        <div class="catalog__price">189 ₽</div>
+      </div>
+    </a>
+    <button class="catalog__to-fav"></button>
+    <button class="catalog__to-cart"></button>
+  </div>
+  <div class="catalog__item">
+    <a href="#">
+      <div class="catalog__img">
+        <img src="images/dist/item2.png" alt="">
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__title">UNIREX</div>
+        <div class="catalog__description">Чистящее средство для
+          ванны и раковины</div>
+        <div class="catalog__price">189 ₽</div>
+      </div>
+    </a>
+    <button class="catalog__to-fav"></button>
+    <button class="catalog__to-cart"></button>
+  </div>
+  <div class="catalog__item">
+    <a href="#">
+      <div class="catalog__img">
+        <img src="images/dist/item1.png" alt="">
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__title">UNIREX</div>
+        <div class="catalog__description">Чистящее средство для
+          ванны и раковины</div>
+        <div class="catalog__price">189 ₽</div>
+      </div>
+    </a>
+    <button class="catalog__to-fav"></button>
+    <button class="catalog__to-cart"></button>
+  </div>
+  <div class="catalog__item">
+    <a href="#">
+      <div class="catalog__img">
+        <img src="images/dist/item2.png" alt="">
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__title">UNIREX</div>
+        <div class="catalog__description">Чистящее средство для
+          ванны и раковины</div>
+        <div class="catalog__price">189 ₽</div>
+      </div>
+    </a>
+    <button class="catalog__to-fav"></button>
+    <button class="catalog__to-cart"></button>
+  </div>
+</div>
+          <div class="catalog-wrapper__footer">
+            <div class="catalog-wrapper__total">Показано 20 из 640 товаров</div>
+            <div class="catalog-wrapper__more">
+              <a href="#" class="btn">Показать ещё</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <a href="/" class="footer__logo">
+              <img src="images/dist/logo-black.svg" alt="">
+            </a>
+            <div class="footer__conts">
+              <a href="#" class="footer__cont">+7 (495) 555 32 54</a>
+              <a href="#" class="footer__cont">309556, Новосибирская <br> область, город Серебряные <br> Пруды, пер. Ломоносова, 13</a>
+            </div>
+          </div>
+          <div class="footer__list footer__list--catalog">
+            <div class="footer__title">КАТАЛОГ</div>
+            <a href="#">Моющие и чистящие средства</a>
+            <a href="#">Красота и здоровье</a>
+            <a href="#">Товары для детей</a>
+            <a href="#">Популярные товарые</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">О НАС</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+          <div class="footer__list">
+            <div class="footer__title">ПОМОЩЬ</div>
+            <a href="#">О компании</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Контакты</a>
+            <a href="#">Новости</a>
+            <a href="#">Блог</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bot footer__bot--copy">Все права защищены</div>
+          <div class="footer__bot">Политика конфиденциальности</div>
+          <div class="footer__bot">Cookies</div>
+        </div>
+      </div>
+    </footer>  
+    <div class="modal close-x" data-modal="applicatio-accepted">
+  <div class="modal__inner">
+    <button class="modal__close close-x" type="button">
+      <img class="close-x" src="images/dist/modal-close.svg" alt="">
+    </button>
+    <div class="modal__content">
+      <div class="accepted">
+        <div class="accepted__icon">
+          <img src="images/dist/accepted.svg" alt="">
+        </div>
+        <div class="accepted__title">Зарос отправлен</div>
+        <div class="accepted__text">Пока вы можете посмотреть <br> <a href="/">другие товары</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal close-x" data-modal="contact">
+  <div class="modal__inner">
+    <button class="modal__close close-x" type="button">
+      <img class="close-x" src="images/dist/modal-close.svg" alt="">
+    </button>
+    <div class="modal__content">
+      <div class="contact-form2">
+  <div class="contact-form2__inner">
+    <div class="contact-form2__title">Запрос прайс-листа</div>
+    <div class="contact-form2__text">Вы можете использовать форму для своих <br> предложений или вопросов. Так вы <br>
+      поможете нам стать ещё лучше!</div>
+    <form class="form form--modal js-contact-form" method="POST" action="/req.php">
+      <div class="form__inner">
+        <div class="form__item form__item--33">
+          <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+        </div>
+        <div class="form__item form__item--33">
+          <input type="email" name="email" class="form__input" placeholder="Почта" required>
+        </div>
+        <div class="form__item form__item--33">
+          <input type="tel" name="tel" class="form__input" placeholder="Телефон" required>
+        </div>
+        <div class="form__item form__item--100">
+          <select name="products" id="" class="form__select">
+            <option value="Products">Цель обращения</option>
+          </select>
+        </div>
+        <div class="form__item form__item--100">
+          <textarea name="comment" class="form__textarea" placeholder="Ваше сообщение" required
+            maxlength="500"></textarea>
+        </div>
+      </div>
+      <div class="form__actions form__actions--modal">
+        <button class="btn form__send js-contact-btn">Отправить</button>
+        <div class="form__conf">
+          <label class="form__conf-label">
+            <input type="checkbox" class="visually-hidden" required>
+            <span></span>
+          </label>
+          <div class="form__conf-text">Отправляя форму, вы соглашаетесь <br> с политикой конфиденциальности</div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
+    defer
+  ></script> -->
+  <script src="js/app.min.js"></script>
+
+</body>
+</html>
