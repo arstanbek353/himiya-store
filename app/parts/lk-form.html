@@ -1,0 +1,26 @@
+<form class="form js-contact-form" method="POST" action="/req.php">
+  <div class="form__inner">
+    <div class="form__item form__item--50">
+      <label for="" class="form__lab">Фамилия Имя Отчество</label>
+      <input type="text" name="name" class="form__input" placeholder="Иванов Иван Иванович" required>
+    </div>
+    <div class="form__item form__item--50">
+      <label for="" class="form__lab">Почта</label>
+      <input type="email" name="email" class="form__input" placeholder="example@test.ru" required>
+    </div>
+    <div class="form__item form__item--50">
+      <label for="" class="form__lab">Телефон</label>
+      <input type="tel" name="tel" class="form__input" placeholder="+7 951 251 51 51" required>
+    </div>
+    <div class="form__item form__item--50">
+      <label for="" class="form__lab">Пол</label>
+      <select name="products" id="" class="form__select">
+        <option value="m">Мужской</option>
+        <option value="f">Женский</option>
+      </select>
+    </div>
+  </div>
+  <div class="form__actions">
+    <button class="btn form__send js-contact-btn">Сохранить</button>
+  </div>
+</form>

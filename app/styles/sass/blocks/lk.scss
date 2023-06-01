@@ -1,0 +1,142 @@
+.lk {
+  padding-top: 10rem;
+  margin-bottom: 5rem;
+  &__inner {
+    display: flex;
+    border-top: 1px solid #E9E9E9;
+  }
+  &__left {
+    width: 41rem;
+    padding-top: 3.8rem;
+    flex-shrink: 0;
+    border-right: 1px solid #E9E9E9;
+  }
+  &__prof {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  &__ava {
+    width: 7.9rem;
+    height: 7.9rem;
+    border-radius: 100%;
+    background-color: $accent;
+    flex-shrink: 0;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: #FFFFFF;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: #484949;
+    margin-bottom: 1rem;
+  }
+  &__logout {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #DA3A3A;
+  }
+  &__item {
+    margin-bottom: 6.3rem;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: #484949;
+    margin-bottom: 2.8rem;
+  }
+  &__point {
+    display: block;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #484949;
+    margin-bottom: 2.8rem;
+
+    &.active {
+      color: $accent;
+      font-weight: 700;
+    }
+  }
+  &__right {
+    flex-grow: 1;
+    padding: 3.8rem 0 3.8rem 3.8rem;
+  }
+  &__form {
+    background: #FFFFFF;
+    box-shadow: 0.7rem 1.2rem 2.2rem rgba(0, 0, 0, 0.05);
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+  }
+  &__cap {
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: #222122;
+    margin-bottom: 4rem;
+  }
+  @media (max-width: 48em) {
+    padding-top: 8rem;
+    &__inner {
+      display: block;
+      border-top: none;
+    }
+    &__left {
+      width: 100%;
+      padding-top: 4.5rem;
+      flex-shrink: 0;
+      border-right: none;
+    }
+    &__prof {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    &__ava {
+      width: 4.4rem;
+      height: 4.4rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+    &__prof-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+    }
+    &__name {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+    }
+    &__logout {
+      font-size: 1.4rem;
+    }
+    &__item {
+      margin-bottom: 4rem;
+    }
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    &__point {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    &__right {
+      padding: 0;
+    }
+    &__form {
+      box-shadow: 0.9rem 1.5rem 1.8rem rgba(0, 0, 0, 0.05);
+      border-radius: 2rem;
+      padding: 2.5rem 1.5rem;
+    }
+    &__cap {
+      font-size: 2.4rem;
+      margin-bottom: 2.4rem;
+    }
+    
+  }
+}

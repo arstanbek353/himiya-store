@@ -1,42 +1,63 @@
 .business {
-  max-width: 192rem;
-  margin: 0 auto;
   margin-bottom: 14rem;
+  overflow: hidden;
   &__inner {
     display: flex;
     align-items: center;
+    gap: 7.2rem;
   }
   &__img {
-    width: 85.5rem;
-    margin-right: 7.3rem;
+    position: relative;
+    width: 50%;
+    height: 70.6rem;
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
   &__content {
-    width: 87.2rem;
+    width: 50%;
   }
   &__text {
     font-size: 1.8rem;
     line-height: 144.4%;
     margin-bottom: 4rem;
   }
+  &--left {
+    .business__img img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
   @media (max-width: 48em) {
-    padding: 0 1.5rem;
     margin-bottom: 10rem;
     &__inner {
-      display: block;
+      flex-direction: column;
+      gap: 3rem;
     }
     &__img {
+      order: -1;
       width: 100%;
-      margin-right: 0;
+      height: 30.5rem;
       border-radius: 2rem;
       overflow: hidden;
-      margin-bottom: 4rem;
+      @include img-cover;
     }
     &__content {
       width: 100%;
     }
+    &__title {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
     &__text {
       font-size: 1.4rem;
-      margin-bottom: 5rem;
+    }
+    &--left {
+      .business__img img {
+        position: static;
+      }
     }
 
   }
